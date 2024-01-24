@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 1px;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://vod-progressive.akamaized.net/exp=1706081120~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2711%2F7%2F188557098%2F624066551.mp4~hmac=c34a8bf09c5d940d86844b7beb274ae6b40e9ded51257a366e81fe619ca4d91e/vimeo-prod-skyfire-std-us/01/2711/7/188557098/624066551.mp4');
+    
+}
+.calculator{
+   padding: 15px;
+   box-shadow: 0 0 15px #000;
+   border: 2px solid rgb(230, 225, 225);
+   border-radius: 10px;
+   background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+.display input{
+    width: 360px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    text-align: right;
+    font-size: 40px;
+    cursor: pointer;
+    outline: 1px solid white;
+    outline-offset: 2px;
+}
+button{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    border: 0;
+    outline: 1px solid #313131;
+    outline-offset: 3px;
+    box-shadow: -5px -6px 15px black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:active{
+    background: black;
+    transform: translate(2px,2px);
+}
+.opr{
+    color: yellow;
+    font-weight: 800;
+}
+#eqBtn{
+    background: rgb(255, 98, 0);
+    font-weight: 900;
+}
+video{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-position: center;
+}
+@media screen and (max-width: 600px) {
+    video{
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.8;
+        background-position: center;
+    }
+    
+    .display input{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: 300px;
+    }
+    button{
+        width: 57px;
+    }
+}

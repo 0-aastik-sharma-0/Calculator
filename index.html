@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="https://vod-progressive.akamaized.net/exp=1706081120~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2711%2F7%2F188557098%2F624066551.mp4~hmac=c34a8bf09c5d940d86844b7beb274ae6b40e9ded51257a366e81fe619ca4d91e/vimeo-prod-skyfire-std-us/01/2711/7/188557098/624066551.mp4" type="video/mp4">
+      </video>
+
+    <div class="calculator">
+
+        <div class="display">
+            <input type="text" id="inputBox" value="0" placeholder="0" disabled>
+        </div>
+        <div class="row">
+            <button type="button" class="opr">AC</button>
+            <button type="button" class="opr">DEL</button>
+            <button type="button" class="opr">%</button>
+            <button type="button" class="opr">/</button>
+        </div>
+        
+        <div class="row">
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+            <button type="button" class="opr">*</button>
+        </div>
+        <div class="row">
+            <button type="button">4</button>
+            <button type="button">5</button>
+            <button type="button">6</button>
+            <button type="button" class="opr">+</button>
+        </div>
+        <div class="row">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button" class="opr">-</button>
+        </div>
+        <div class="row">
+            <button type="button" id="piusMinus">&#xB1</button>
+            <button type="button">0</button>
+            <button type="button">.</button>
+            <button type="button" id="eqBtn">=</button>
+        </div>
+       
+    <!----Ending od calculator div-->    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
